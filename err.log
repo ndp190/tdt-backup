@@ -1,0 +1,61 @@
+85: Error 0085: The following error occurred during script evaluation, please view the output log for more information: ---------- Start of error message from Python interpreter ---------- Caught exception while executing function: Traceback (most recent call last): File "\server\InvokePy.py", line 120, in executeScript outframe = mod.azureml_main(*inframes) File "\temp\1354009320.py", line 66, in azureml_main File "C:\pyhome\lib\site-packages\sklearn\neighbors\base.py", line 758, in fit X, y = check_X_y(X, y, "csr", multi_output=True) File "C:\pyhome\lib\site-packages\sklearn\utils\validation.py", line 510, in check_X_y ensure_min_features, warn_on_dtype, estimator) File "C:\pyhome\lib\site-packages\sklearn\utils\validation.py", line 407, in check_array context)) ValueError: Found array with 0 sample(s) (shape=(0, 4)) while a minimum of 1 is required. ---------- End of error message from Python interpreter ----------, Error code: ModuleExecutionError, Http status code: 400, Timestamp: Thu, 18 Mar 2021 14:17:27 GMT
+
+
+Error 0085: The following error occurred during script evaluation, please view the output log for more information:
+---------- Start of error message from Python interpreter ----------
+Caught exception while executing function: Traceback (most recent call last):
+  File "C:\server\invokepy.py", line 199, in batch
+    odfs = mod.azureml_main(*idfs)
+  File "C:\temp\76745a6268634690948b948e66dfd5c4.py", line 24, in azureml_main
+    model = pickle.load(open(".\Script Bundle\car-model.pkl", 'rb'))
+  File "C:\pyhome\lib\pickle.py", line 1384, in load
+    return Unpickler(file).load()
+  File "C:\pyhome\lib\pickle.py", line 864, in load
+    dispatch[key](self)
+  File "C:\pyhome\lib\pickle.py", line 1096, in load_global
+    klass = self.find_class(module, name)
+  File "C:\pyhome\lib\pickle.py", line 1130, in find_class
+    __import__(module)
+ImportError: No module named _regression
+Process returned with non-zero exit code 1
+
+---------- End of error message from Python  interpreter  ----------
+Start time: UTC 03/22/2021 08:57:15
+End time: UTC 03/22/2021 08:57:30
+
+Error 0085: The following error occurred during script evaluation, please view the output log for more information:
+---------- Start of error message from Python interpreter ----------
+Caught exception while executing function: Traceback (most recent call last):
+  File "C:\server\invokepy.py", line 199, in batch
+    odfs = mod.azureml_main(*idfs)
+  File "C:\temp\5c199e7489bc4f6b85f16661c4d79029.py", line 27, in azureml_main
+    pred = model.predict(dataframe1)
+  File "C:\pyhome\lib\site-packages\sklearn\neighbors\regression.py", line 142, in predict
+    X = check_array(X, accept_sparse='csr')
+  File "C:\pyhome\lib\site-packages\sklearn\utils\validation.py", line 393, in check_array
+    array = array.astype(np.float64)
+ValueError: invalid literal for float(): 23.57 kmpl
+Process returned with non-zero exit code 1
+
+---------- End of error message from Python  interpreter  ----------
+Start time: UTC 03/22/2021 15:49:38
+End time: UTC 03/22/2021 15:50:01
+
+
+Error 0085: The following error occurred during script evaluation, please view the output log for more information:
+---------- Start of error message from Python interpreter ----------
+Caught exception while executing function: Traceback (most recent call last):
+  File "C:\server\invokepy.py", line 199, in batch
+    odfs = mod.azureml_main(*idfs)
+  File "C:\temp\95ae110a55394e4790a6111c65e5e536.py", line 27, in azureml_main
+    pred = model.predict(dataframe1)
+  File "C:\pyhome\lib\site-packages\sklearn\neighbors\regression.py", line 142, in predict
+    X = check_array(X, accept_sparse='csr')
+  File "C:\pyhome\lib\site-packages\sklearn\utils\validation.py", line 393, in check_array
+    array = array.astype(np.float64)
+ValueError: could not convert string to float: TATA
+Process returned with non-zero exit code 1
+
+---------- End of error message from Python  interpreter  ----------
+Start time: UTC 03/22/2021 16:08:13
+End time: UTC 03/22/2021 16:08:45

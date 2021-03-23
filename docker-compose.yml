@@ -1,0 +1,15 @@
+version: "2.1"
+services:
+
+  ipython:
+    container_name: jupyter-notebook-local
+    image: jupyter/datascience-notebook
+    ports:
+      - 8888:8888
+    environment:
+      - PASSWORD=1234
+      - JUPYTER_ENABLE_LAB=yes
+    volumes:
+      - /Users/nikk/Downloads/xn:/jupyter/datascience-notebook
+
+
